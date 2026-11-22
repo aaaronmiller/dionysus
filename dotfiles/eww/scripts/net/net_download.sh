@@ -9,7 +9,11 @@
 #
 # ─────────────────────────────────────────────────────────────────────────────
 
-iface="wlp4s0"   # Wi-Fi interface
+# Source network helper for dynamic interface detection
+SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
+source "$SCRIPT_DIR/network-helper.sh"
+
+iface="${NET_IFACE:-wlan0}"   # Wi-Fi interface (auto-detected)
 max_speed=12500000   # adjust: this is 100 Mbps (100*1e6 / 8)
 
 # First sample
