@@ -569,7 +569,7 @@ alias oc='OPENAI_BASE_URL=http://127.0.0.1:8082/p/opencode/v1 OPENAI_API_KEY=pas
 alias ocl='OPENAI_BASE_URL=http://127.0.0.1:8082/p/opencode/v1 OPENAI_API_KEY=pass openclaw'   # OpenClaw via proxy
 
 # OpenClaw completions
-[[ -f "/home/cheta-surface/.openclaw/completions/openclaw.zsh" ]] && source "/home/cheta-surface/.openclaw/completions/openclaw.zsh"
+[[ -f "$HOME/.openclaw/completions/openclaw.zsh" ]] && source "$HOME/.openclaw/completions/openclaw.zsh"
 
 # Legacy muscle memory
 alias ccproxy='proxy-up'   # Start proxy stack
